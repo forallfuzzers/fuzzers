@@ -26,6 +26,13 @@ jobs:
       - name: Check out the repo
         uses: actions/checkout@v2
 
+      # Login to remote registry
+      - name: Docker login
+        run: docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
+        env:
+          DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+          DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+
       # Build images so that they're ready to be pushed
       - name: Build images
         run: make build
