@@ -6,8 +6,8 @@ BUILD_PREFIX := build/
 PUSH_PREFIX := push/
 CLEAN_PREFIX := clean/
 FUZZERS := \
-	afl-gcc \
-	aflpp-gcc \
+	afl \
+	aflplusplus \
 	atheris \
 	jazzer
 BUILD_FUZZERS := $(addprefix $(BUILD_PREFIX), $(FUZZERS))
