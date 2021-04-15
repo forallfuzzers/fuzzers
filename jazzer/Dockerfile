@@ -1,14 +1,7 @@
 FROM openjdk:11
 COPY * /usr/bin/
-RUN mkdir -p /corpus && \
-    apt-get update && \
-    rm /bin/sh && ln -s /bin/bash /bin/sh && \
-    apt-get -qq -y install curl unzip zip && \
-    curl -s https://get.sdkman.io | bash && \
-    chmod a+x "$HOME/.sdkman/bin/sdkman-init.sh"
-RUN source "$HOME/.sdkman/bin/sdkman-init.sh" && \
-    sdk install kotlin
+RUN mkdir -p /corpus
 ENV LD_LIBRARY_PATH /usr/local/openjdk-11/lib/server
 
-LABEL LANGUAGES "java, kotlin, jvm-based"
+LABEL LANGUAGES "java, jvm-based"
 LABEL FUZZER "libfuzzer"
