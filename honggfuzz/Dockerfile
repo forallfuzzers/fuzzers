@@ -8,6 +8,6 @@ RUN apt-get update && \
     make && \
     make install
 
-LABEL LANGUAGES "c,c++"
+LABEL LANGUAGES "c, c++"
 LABEL FUZZER "honggfuzz"
 

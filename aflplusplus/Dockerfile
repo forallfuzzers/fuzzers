@@ -1,6 +1,6 @@
 FROM aflplusplus/aflplusplus
 RUN mkdir -p /corpus
 
-LABEL LANGUAGES "c,c++"
+LABEL LANGUAGES "c, c++"
 LABEL FUZZER "afl"
 
