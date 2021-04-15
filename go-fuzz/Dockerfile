@@ -4,4 +4,4 @@ RUN go get -u github.com/dvyukov/go-fuzz/go-fuzz github.com/dvyukov/go-fuzz/go-f
     apt-get install -y clang
  
 LABEL LANGUAGES "go"
-LABEL FUZZER "go-fuzz"
+LABEL FUZZERCLASS "libfuzzer"

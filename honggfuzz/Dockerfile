@@ -9,5 +9,5 @@ RUN apt-get update && \
     make install
 
 LABEL LANGUAGES "c, c++"
-LABEL FUZZER "honggfuzz"
+LABEL FUZZERCLASS "honggfuzz"
 

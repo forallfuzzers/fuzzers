@@ -4,4 +4,4 @@ RUN cargo install cargo-fuzz && \
     rustup default nightly
  
 LABEL LANGUAGES "rust"
-LABEL FUZZER "cargo-fuzz"
+LABEL FUZZERCLASS "libfuzzer"

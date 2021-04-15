@@ -4,5 +4,5 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/* && mkdir -p /corpus
 
 LABEL LANGUAGES "c, c++"
-LABEL FUZZER "afl"
+LABEL FUZZERCLASS "afl"
 
