@@ -9,7 +9,10 @@ FUZZERS := \
 	afl \
 	aflplusplus \
 	atheris \
-	jazzer
+	cargo-fuzz \
+	go-fuzz \
+	jazzer \
+	libfuzzer
 BUILD_FUZZERS := $(addprefix $(BUILD_PREFIX), $(FUZZERS))
 PUSH_FUZZERS := $(addprefix $(PUSH_PREFIX), $(FUZZERS))
 CLEAN_FUZZERS := $(addprefix $(CLEAN_PREFIX), $(FUZZERS))
