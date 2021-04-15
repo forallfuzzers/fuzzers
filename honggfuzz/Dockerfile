@@ -10,4 +10,3 @@ RUN apt-get update && \
 
 LABEL LANGUAGES "c, c++"
 LABEL FUZZERCLASS "honggfuzz"
-
