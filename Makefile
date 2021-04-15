@@ -9,7 +9,7 @@ FUZZERS := \
 	afl \
 	aflplusplus \
 	atheris \
-	cargp-fuzz \
+	cargo-fuzz \
 	go-fuzz \
 	jazzer \
 	libfuzzer
