@@ -1,4 +1,4 @@
-FROM debian:stable-slim
+FROM debian:buster-slim
 RUN apt-get update && \
     apt-get install -fy software-properties-common wget gnupg gnupg2 gnupg1 && \
     add-apt-repository 'deb http://apt.llvm.org/buster/ llvm-toolchain-buster-12 main' && \
