@@ -11,6 +11,7 @@ FUZZERS := \
 	atheris \
 	cargo-fuzz \
 	go-fuzz \
+	honggfuzz \
 	jazzer \
 	libfuzzer
 BUILD_FUZZERS := $(addprefix $(BUILD_PREFIX), $(FUZZERS))

@@ -1,4 +1,4 @@
-FROM debian:stable-slim
+FROM debian:buster-slim
 RUN apt-get update && \
     apt-get install -fy make curl build-essential binutils-dev libunwind-dev clang afl=2.52b-5 libc6-dbg && \
     rm -rf /var/lib/apt/lists/* && mkdir -p /corpus && \
