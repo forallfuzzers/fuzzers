@@ -1,6 +1,7 @@
 FROM rust:1.44-buster
-RUN rustup update 1.54.0 && \
-    rustup default 1.54.0 && \
+
+RUN rustup update nightly-2021-08-29 && \
+    rustup default nightly-2021-08-29 && \
     cargo install cargo-fuzz
  
 LABEL LANGUAGES "rust"
