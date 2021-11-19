@@ -7,6 +7,7 @@ PUSH_PREFIX := push/
 CLEAN_PREFIX := clean/
 FUZZERS := \
 	afl \
+	afl-qemu \
 	aflplusplus \
 	atheris \
 	cargo-fuzz \
