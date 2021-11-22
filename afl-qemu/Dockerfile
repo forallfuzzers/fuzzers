@@ -10,7 +10,7 @@ RUN apt-get update && \
 
 FROM debian:buster-slim
 RUN apt-get update && \
-    apt-get install -fy libglib2.0-dev zlib1g libc6 libstdc++6 libpcre3
+    apt-get install -fy libglib2.0.0 zlib1g libc6 libstdc++6 libpcre3
 COPY --from=builder /root/AFL/afl-fuzz /usr/bin
 COPY --from=builder /root/AFL/afl-qemu-trace /usr/bin
 ENV AFL_PATH="/usr/bin"
