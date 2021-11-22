@@ -14,7 +14,6 @@ COPY --from=builder /root/AFL/afl-fuzz /usr/bin
 COPY --from=builder /lib/x86_64-linux-gnu/libdl.so.2 /lib/x86_64-linux-gnu/libdl.so.2
 COPY --from=builder /lib/x86_64-linux-gnu/libc.so.6 /lib/x86_64-linux-gnu/libc.so.6
 COPY --from=builder /lib64/ld-linux-x86-64.so.2 /lib64/ld-linux-x86-64.so.2
-
 # Copy over afl-qemu-trace dependencies
 COPY --from=builder /root/AFL/afl-qemu-trace /usr/bin
 COPY --from=builder /usr/lib/x86_64-linux-gnu/libgthread-2.0.so.0 /usr/lib/x86_64-linux-gnu/libgthread-2.0.so.0
