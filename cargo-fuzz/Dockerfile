@@ -1,8 +1,8 @@
 FROM rust:1.44-buster
 
-RUN rustup update nightly-2021-08-29 && \
-    rustup default nightly-2021-08-29 && \
-    cargo install cargo-fuzz --version 0.10.0
- 
+RUN rustup update nightly-2022-10-13 && \
+    rustup default nightly-2022-10-13 && \
+    cargo install cargo-fuzz --version 0.11.0
+
 LABEL LANGUAGES "rust"
 LABEL FUZZERCLASS "libfuzzer"
